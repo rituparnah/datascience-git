@@ -1,0 +1,22 @@
+---
+title: "Data Science for Public Policy"
+subtitle: "Assignment XX"
+author: "Ritwika - rr1264"
+execute:
+  warning: false
+format:
+  html:
+    embed-resources: true
+---
+
+
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+storms %>%
+  ggplot()+
+    geom_col(mapping=aes(x=pressure, y=wind))
+```
